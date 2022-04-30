@@ -5,10 +5,44 @@
 /* #2F303A - background колір героя та футера */
 /* #E5E5E5 - білий background колір сторінки */
 /* #F5F4FA - трохи сіріший білий background колір сторінки */
+/* Задаю колір сторінки сайту та основний колір тексту */
+:root {
+    --general-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+     
+}
 body {
     background-color: #E5E5E5;
-    color: #757575;
+    color: var(--general-text-color);
 }
+/* Задаю колір частини логотипу */
 .logo {
-    color:#2196F3 ;
+    color:var(--accent-color) ;
+}
+/* Прибираю крапки пунктів списку */
+ul {
+    list-style: none;
+}
+/* Задаю колір ссилок в блоці навігації */
+.site-nav .link {
+    color: var(--title-text-color);
+}
+/* задаю колір ссилок в блоці навігації при наваденні та переході */
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+/* задаю колір заголовків */
+.hero-title {
+    color: var(--title-text-color);
+}
+.section-title {
+    color: var(--title-text-color);
+}
+.featers .title {
+    color: var(--title-text-color);
+}
+.team .title {
+    color: var(--title-text-color);
 }
