@@ -6,6 +6,9 @@
 /* #E5E5E5 - білий background колір сторінки */
 /* #F5F4FA - трохи сіріший білий background колір сторінки */
 body {
-    background-color: aquamarine;
+    background-color: #E5E5E5;
     color: #757575;
+}
+.logo {
+    color:#2196F3 ;
 }
