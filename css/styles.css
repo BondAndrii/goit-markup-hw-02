@@ -61,3 +61,6 @@ ul {
     color: var(--second-text-color);
     background-color: var(--accent-color);
 }
+footer {
+    background-color: #2F303A;
+}
