@@ -34,6 +34,9 @@ ul {
 .site-nav .link:focus {
     color: var(--accent-color);
 }
+.site-nav .link.current {
+    color: var(--accent-color);
+}
 /* Задаю колір ссилок в блоці авторизації */
 .auth-nav .link {
     color: var(--title-text-color);
