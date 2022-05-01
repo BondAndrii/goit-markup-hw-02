@@ -5,12 +5,14 @@
 /* #2F303A - background колір героя та футера */
 /* #E5E5E5 - білий background колір сторінки */
 /* #F5F4FA - трохи сіріший білий background колір сторінки */
+/* rgba(255, 255, 255, 0.6) - колір ссилок футера */
 /* Задаю колір сторінки сайту та основний колір тексту */
 :root {
     --general-text-color: #757575;
     --title-text-color: #212121;
     --accent-color: #2196F3;
     --second-text-color: #FFFFFF;
+    --footer-second-text-color: rgba(255, 255, 255, 0.6)
 }
 body {
     background-color: #E5E5E5;
@@ -19,6 +21,13 @@ body {
 /* Задаю колір частини логотипу */
 .logo {
     color:var(--accent-color) ;
+}
+/* задаю колір другої частини тексту лого */
+.logotext {
+    color: var(--title-text-color);
+}
+.logotext:hover, .logotext:focus {
+    color: var(--accent-color);
 }
 /* Прибираю крапки пунктів списку */
 ul {
@@ -45,6 +54,23 @@ ul {
 /* задаю колір ссилок в блоці авторизації при наваденні та переході */
 .auth-nav .link:hover,
 .auth-nav .link:focus {
+    color: var(--accent-color);
+}
+/* задаю колір тексту футера */
+.footer-nav .link {
+    color: var(--second-text-color);
+}
+/* задаю колір ссилок в футері при наваденні та переході */
+.footer-nav .link:hover,
+.footer-nav .link:focus {
+    color: var(--accent-color);
+}
+/* задаю колір контактів в футері */
+.footer-nav .contact {
+    color: var(--footer-second-text-color);
+}
+.footer-nav .contact:hover,
+.footer-nav .contact:focus {
     color: var(--accent-color);
 }
 /* задаю колір заголовків */
