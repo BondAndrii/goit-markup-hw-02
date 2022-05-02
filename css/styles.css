@@ -12,11 +12,12 @@
     --title-text-color: #212121;
     --accent-color: #2196F3;
     --second-text-color: #FFFFFF;
-    --footer-second-text-color: rgba(255, 255, 255, 0.6)
+    --footer-second-text-color: rgba(255, 255, 255, 0.6);
+    --bgc-button-color: #F5F4FA;
 }
 body {
-    background-color: #E5E5E5;
     color: var(--general-text-color);
+    background-color: #E5E5E5;
 }
 /* Задаю колір частини логотипу */
 .logo {
@@ -56,23 +57,6 @@ ul {
 .auth-nav .link:focus {
     color: var(--accent-color);
 }
-/* задаю колір тексту футера */
-.footer-nav .link {
-    color: var(--second-text-color);
-}
-/* задаю колір ссилок в футері при наваденні та переході */
-.footer-nav .link:hover,
-.footer-nav .link:focus {
-    color: var(--accent-color);
-}
-/* задаю колір контактів в футері */
-.footer-nav .contact {
-    color: var(--footer-second-text-color);
-}
-.footer-nav .contact:hover,
-.footer-nav .contact:focus {
-    color: var(--accent-color);
-}
 /* задаю колір заголовків */
 .hero-title {
     color: var(--second-text-color);
@@ -86,10 +70,50 @@ ul {
 .team .title {
     color: var(--title-text-color);
 }
+/* Оформляємо кнопки */
 .button {
     color: var(--second-text-color);
     background-color: var(--accent-color);
 }
+/* задаю колір тексту футера */
+.footer-nav .link {
+    color: var(--second-text-color);
+}
+
+/* задаю колір ссилок в футері при наваденні та переході */
+.footer-nav .link:hover,
+.footer-nav .link:focus {
+    color: var(--accent-color);
+}
+
+/* задаю колір контактів в футері */
+.footer-nav .contact {
+    color: var(--footer-second-text-color);
+}
+
+.footer-nav .contact:hover,
+.footer-nav .contact:focus {
+    color: var(--accent-color);
+}
+.button {
+    color: var(--title-text-color);
+    background-color: var(--bgc-button-color);
+}
+.button:hover,
+.button:focus {
+    color: var(--second-text-color);
+    background-color: var(--accent-color);
+}
+.button.invers {
+    color: var(--second-text-color);
+    background-color: var(--accent-color) ;
+}
 footer {
     background-color: #2F303A;
+}
+.example .title {
+    color: var(--title-text-color);
+}
+.general-title {
+    color: var(--title-text-color);
 }
