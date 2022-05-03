@@ -18,8 +18,10 @@
 body {
     color: var(--general-text-color);
     background-color: #E5E5E5;
+
+    font-family: Roboto, sans-serif;
 }
-/* Задаю колір частини логотипу */
+/* Задаю колір частини логотипу */ 
 .logo {
     color:var(--accent-color) ;
 }
