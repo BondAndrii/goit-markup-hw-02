@@ -16,6 +16,7 @@
     --bgc-button-color: #F5F4FA;
     --back-ground-color: #E5E5E5;
 }
+/* Задаю основні стилі сторінки */
 body {
     color: var(--general-text-color);
     background-color: var(--back-ground-color);
@@ -25,7 +26,7 @@ body {
     font-size: 14px;
     letter-spacing: 0.03em;
 }
-/* Задаю колір частини логотипу */ 
+/* Задаю колір передньої частини логотипу */ 
 .logo {
     color:var(--accent-color);
 
@@ -39,7 +40,7 @@ body {
     font-size: 26px;
     line-height: 1.2;       
 }
-
+/* задаю колір лого при ховері та фокусі */
 .logotext:hover, .logotext:focus {
     color: var(--accent-color);
 }
@@ -47,8 +48,7 @@ body {
 .list {
     list-style: none;
 }
-/* Задаю колір ссилок в блоці навігації */
-
+/* Задаю колір та шрифт ссилок в блоці навігації */
 .site-nav .link {
     color: var(--title-text-color);
 
@@ -56,7 +56,7 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
-/* задаю колір ссилок в блоці навігації при наваденні та переході */
+/* задаю колір та шрифт ссилок в блоці навігації при наваденні та переході */
 .site-nav .link:hover,
 .site-nav .link:focus {
     color: var(--accent-color);
@@ -64,7 +64,7 @@ body {
 .site-nav .link.current {
     color: var(--accent-color);
 }
-/* Задаю колір ссилок в блоці авторизації */
+/* Задаю колір та шрифт ссилок в блоці авторизації */
 .auth-nav .link {
     color: var(--title-text-color);
 
@@ -74,12 +74,13 @@ body {
     letter-spacing: 0.02em;
 }
 
-/* задаю колір ссилок в блоці авторизації при наваденні та переході */
+/* задаю колір та шрифт ссилок в блоці авторизації при наваденні та переході */
 .auth-nav .link:hover,
 .auth-nav .link:focus {
     color: var(--accent-color);
 }
-/* задаю колір заголовків */
+/* задаю колір та шрифт заголовків */
+/* Задаю колір та шрифт головного заголовка */
 .hero-title {
     color: var(--second-text-color);
 
@@ -91,6 +92,7 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
+/* задаю колір та шрифт заголовків секції */
 .section-title {
     color: var(--title-text-color);
 
@@ -100,9 +102,8 @@ body {
     text-align: center;
     
 }
-.featers {
-    line-height: 1.71;    
-}
+
+/* задаю колір та шрифт h3 в секції featers */
 .featers .title {
     color: var(--title-text-color);
 
@@ -111,6 +112,11 @@ body {
     line-height: 1.14;
     text-transform: uppercase;
 }
+/* задаю колір та шрифт основного тексту в секції featers */
+.featers {
+    line-height: 1.71;
+}
+/* задаю колір та шрифт основного тексту в секції team */
 .team {
     
     font-size: 16px;
@@ -120,6 +126,7 @@ body {
     text-align: center;
     
 }
+/* задаю колір та шрифт заголовків h3 в секції team */
 .team .title {
     color: var(--title-text-color);
 
@@ -128,10 +135,18 @@ body {
     line-height: 1.88;
    
     
-    text-align: center;
-    
+    text-align: center;    
 }
+/* Задаю колір заголовків h3 в секції приклади */
+.example .title {
+    color: var(--title-text-color);
 
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+/* задаю колір та шрифт логотипу в футері */
 .logotextfoot {
     color: var(--second-text-color);
     font-family: raleway, sans-serif;
@@ -141,12 +156,9 @@ body {
 } 
 /* задаю колір тексту футера */
 .footer-nav .link {
-    color: var(--second-text-color);
-
+    color: var(--second-text-color);    
     
-    
-    line-height: 1.71;  
-   
+    line-height: 1.71;     
 }
 
 /* задаю колір ссилок в футері при наваденні та переході */
@@ -165,6 +177,7 @@ body {
     color: var(--accent-color);
 }
 /* Оформляємо кнопки */
+/* задаю колір та шрифт кнопок фільтру */
 .button {
     color: var(--title-text-color);
     background-color: var(--bgc-button-color);
@@ -176,11 +189,13 @@ body {
     text-align: center;
     
 }
+/* задаю колір та шрифт кнопок фільтру при наведенні та фокусі */
 .button:hover,
 .button:focus {
     color: var(--second-text-color);
     background-color: var(--accent-color);
 }
+/* задаю колір та шрифт кнопці "заказать услугу" */
 .button.invers {
     color: var(--second-text-color);
     background-color: var(--accent-color);
@@ -195,18 +210,13 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
 }
+/* задаю колір бекграунду футера */
 footer {
     background-color: #2F303A;
 }
+/* задаю колір та шрифт секції приклади */
 .example {    
     font-size: 16px;
     line-height: 1.88;    
 }
-.example .title {
-    color: var(--title-text-color);
-    
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;       
-    letter-spacing: 0.06em;
-}
+
