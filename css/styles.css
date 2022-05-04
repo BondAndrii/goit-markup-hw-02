@@ -20,15 +20,25 @@ body {
     background-color: #E5E5E5;
 
     font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.03em;
 }
 /* Задаю колір частини логотипу */ 
 .logo {
-    color:var(--accent-color) ;
+    color:var(--accent-color);
+
 }
 /* задаю колір другої частини тексту лого */
 .logotext {
     color: var(--title-text-color);
+
+    font-family: raleway,sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;       
 }
+
 .logotext:hover, .logotext:focus {
     color: var(--accent-color);
 }
@@ -40,6 +50,10 @@ ul {
 
 .site-nav .link {
     color: var(--title-text-color);
+
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 /* задаю колір ссилок в блоці навігації при наваденні та переході */
 .site-nav .link:hover,
@@ -52,6 +66,11 @@ ul {
 /* Задаю колір ссилок в блоці авторизації */
 .auth-nav .link {
     color: var(--title-text-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 
 /* задаю колір ссилок в блоці авторизації при наваденні та переході */
@@ -62,24 +81,75 @@ ul {
 /* задаю колір заголовків */
 .hero-title {
     color: var(--second-text-color);
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+       
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 .section-title {
     color: var(--title-text-color);
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.featers {
+    line-height: 1.71;    
 }
 .featers .title {
     color: var(--title-text-color);
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+.team {
+    
+    font-size: 16px;
+    line-height: 1.88px;
+    
+    
+    text-align: center;
+    
 }
 .team .title {
     color: var(--title-text-color);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.88;
+   
+    
+    text-align: center;
+    
 }
 /* Оформляємо кнопки */
 .button {
     color: var(--second-text-color);
     background-color: var(--accent-color);
 }
+.logotextfoot {
+    color: var(--second-text-color);
+    font-family: raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+} 
 /* задаю колір тексту футера */
 .footer-nav .link {
     color: var(--second-text-color);
+
+    
+    
+    line-height: 1.71;  
+   
 }
 
 /* задаю колір ссилок в футері при наваденні та переході */
@@ -108,7 +178,17 @@ ul {
 }
 .button.invers {
     color: var(--second-text-color);
-    background-color: var(--accent-color) ;
+    background-color: var(--accent-color);
+
+   
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1,88;
+        
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
 }
 footer {
     background-color: #2F303A;
