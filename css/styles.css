@@ -43,7 +43,7 @@ body {
     color: var(--accent-color);
 }
 /* Прибираю крапки пунктів списку */
-ul {
+.list {
     list-style: none;
 }
 /* Задаю колір ссилок в блоці навігації */
@@ -170,6 +170,12 @@ ul {
 .button {
     color: var(--title-text-color);
     background-color: var(--bgc-button-color);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;      
+    text-align: center;
+    
 }
 .button:hover,
 .button:focus {
@@ -193,6 +199,15 @@ ul {
 footer {
     background-color: #2F303A;
 }
+.example {    
+    font-size: 16px;
+    line-height: 1.88;    
+}
 .example .title {
     color: var(--title-text-color);
+    
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;       
+    letter-spacing: 0.06em;
 }
