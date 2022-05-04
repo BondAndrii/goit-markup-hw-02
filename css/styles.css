@@ -14,10 +14,11 @@
     --second-text-color: #FFFFFF;
     --footer-second-text-color: rgba(255, 255, 255, 0.6);
     --bgc-button-color: #F5F4FA;
+    --back-ground-color: #E5E5E5;
 }
 body {
     color: var(--general-text-color);
-    background-color: #E5E5E5;
+    background-color: var(--back-ground-color);
 
     font-family: Roboto, sans-serif;
     font-weight: 400;
