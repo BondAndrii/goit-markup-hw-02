@@ -15,6 +15,7 @@
     --footer-second-text-color: rgba(255, 255, 255, 0.6);
     --bgc-button-color: #F5F4FA;
     --back-ground-color: #E5E5E5;
+    --brc-footer: #2F303A;
 }
 /* Задаю основні стилі сторінки */
 body {
@@ -22,7 +23,7 @@ body {
     background-color: var(--back-ground-color);
 
     font-family: Roboto, sans-serif;
-    font-weight: 400;
+    /* font-weight: 400; */
     font-size: 14px;
     letter-spacing: 0.03em;
 }
@@ -156,7 +157,8 @@ body {
 } 
 /* задаю колір тексту футера */
 .footer-nav .link {
-    color: var(--second-text-color);    
+    color: var(--second-text-color);
+    
     
     line-height: 1.71;     
 }
@@ -211,9 +213,9 @@ body {
     letter-spacing: 0.06em;
 }
 /* задаю колір бекграунду футера */
-footer {
-    background-color: #2F303A;
-}
+/* footer {
+    background-color: var(--brc-footer);
+} */
 /* задаю колір та шрифт секції приклади */
 .example {    
     font-size: 16px;
