@@ -15,12 +15,12 @@
     --footer-second-text-color: rgba(255, 255, 255, 0.6);
     --bgc-button-color: #F5F4FA;
     --back-ground-color: #E5E5E5;
-    --brc-footer: #2F303A;
+    --brc-herofooter: #2F303A;
 }
 /* Задаю основні стилі сторінки */
 body {
     color: var(--general-text-color);
-    background-color: var(--back-ground-color);
+    background-color: var(--second-text-color);
 
     font-family: Roboto, sans-serif;
     /* font-weight: 400; */
@@ -32,6 +32,9 @@ body {
     color:var(--accent-color);
 
 }
+/* .navigation { 
+    color: var(--title-text-color);
+}*/
 /* задаю колір другої частини тексту лого */
 .logotext {
     color: var(--title-text-color);
@@ -42,12 +45,15 @@ body {
     line-height: 1.2;       
 }
 /* задаю колір лого при ховері та фокусі */
-.logotext:hover, .logotext:focus {
+/* .logotext:hover, .logotext:focus { 
     color: var(--accent-color);
-}
+}*/
 /* Прибираю крапки пунктів списку */
 .list {
     list-style: none;
+}
+.link {
+    text-decoration: none;
 }
 /* Задаю колір та шрифт ссилок в блоці навігації */
 .site-nav .link {
@@ -66,8 +72,8 @@ body {
     color: var(--accent-color);
 }
 /* Задаю колір та шрифт ссилок в блоці авторизації */
-.auth-nav .link {
-    color: var(--title-text-color);
+.contact-nav .link {
+    color: var(--general-text-color);
 
     font-weight: 500;
     font-size: 14px;
@@ -76,12 +82,15 @@ body {
 }
 
 /* задаю колір та шрифт ссилок в блоці авторизації при наваденні та переході */
-.auth-nav .link:hover,
-.auth-nav .link:focus {
+.contact-nav .link:hover,
+.contact-nav .link:focus {
     color: var(--accent-color);
 }
 /* задаю колір та шрифт заголовків */
 /* Задаю колір та шрифт головного заголовка */
+.hero {
+    background-color: var(--brc-herofooter) ;
+}
 .hero-title {
     color: var(--second-text-color);
 
@@ -97,7 +106,8 @@ body {
 .section-title {
     color: var(--title-text-color);
 
-    font-weight: 700;
+    /* font-weight: 700; 
+    прибираю шрифт 700 з заголовку, бо він такий по замовчуванню для заголовків*/
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
@@ -105,18 +115,28 @@ body {
 }
 
 /* задаю колір та шрифт h3 в секції featers */
-.featers .title {
+.featers-title {
     color: var(--title-text-color);
 
-    font-weight: 700;
+    /* font-weight: 700; */
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
 }
+/* .featers .title { 
+    color: var(--title-text-color);*/
+
+    /* font-weight: 700; */
+    /* font-size: 14px; 
+    line-height: 1.14;
+    text-transform: uppercase;
+}*/
 /* задаю колір та шрифт основного тексту в секції featers */
-.featers {
+.featers-decription {
+    
     line-height: 1.71;
 }
+
 /* задаю колір та шрифт основного тексту в секції team */
 .team {
     
@@ -154,20 +174,25 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
-} 
+}
+.footer {
+    background-color: var(--brc-herofooter);
+}
+
 /* задаю колір тексту футера */
 .footer-nav .link {
     color: var(--second-text-color);
+    
     
     
     line-height: 1.71;     
 }
 
 /* задаю колір ссилок в футері при наваденні та переході */
-.footer-nav .link:hover,
+/* .footer-nav .link:hover, 
 .footer-nav .link:focus {
     color: var(--accent-color);
-}
+}*/
 
 /* задаю колір контактів в футері */
 .footer-nav .contact {
@@ -190,6 +215,10 @@ body {
     line-height: 1.62;      
     text-align: center;
     
+}
+.button.current {
+    color: var(--second-text-color);
+    background-color: var(--accent-color);
 }
 /* задаю колір та шрифт кнопок фільтру при наведенні та фокусі */
 .button:hover,
