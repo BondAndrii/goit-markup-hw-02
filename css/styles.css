@@ -138,17 +138,31 @@ body {
 }
 
 /* задаю колір та шрифт основного тексту в секції team */
-.team {
+/* .team { 
     
+       
+}*/
+.team-title {
+    color: var(--title-text-color);
+
+    font-weight: 500;
     font-size: 16px;
-    line-height: 1.88px;
+    line-height: 1.88;
+   
+    
+    text-align: center;
+}
+.team-decription {
+    font-size: 16px;
+    line-height: 1.2;
     
     
     text-align: center;
-    
+
 }
+
 /* задаю колір та шрифт заголовків h3 в секції team */
-.team .title {
+/* .team .title { 
     color: var(--title-text-color);
 
     font-weight: 500;
@@ -157,15 +171,27 @@ body {
    
     
     text-align: center;    
-}
+}*/
 /* Задаю колір заголовків h3 в секції приклади */
-.example .title {
+.example-title {
     color: var(--title-text-color);
 
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+}
+.example-title{
+
+    color: var(--title-text-color);
+    
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.example-decription {
+    font-size: 16px;
+    line-height: 1.88;
 }
 /* задаю колір та шрифт логотипу в футері */
 .logotextfoot {
@@ -184,7 +210,7 @@ body {
     color: var(--second-text-color);
     
     
-    
+    font-style: normal;
     line-height: 1.71;     
 }
 
@@ -246,8 +272,7 @@ body {
     background-color: var(--brc-footer);
 } */
 /* задаю колір та шрифт секції приклади */
-.example {    
-    font-size: 16px;
-    line-height: 1.88;    
-}
+/* .example {     
+      
+}*/
 
