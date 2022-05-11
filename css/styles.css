@@ -232,6 +232,10 @@ body {
 /* Оформляємо кнопки */
 /* задаю колір та шрифт кнопок фільтру */
 .button {
+    border-radius: 4px;
+    padding: 6 22;
+    border: none;
+
     color: var(--title-text-color);
     background-color: var(--bgc-button-color);
 
@@ -253,7 +257,11 @@ body {
     background-color: var(--accent-color);
 }
 /* задаю колір та шрифт кнопці "заказать услугу" */
-.button.invers {
+.button-hero {
+    border-radius: 4px;
+    padding: 10 32;
+    border: none;
+
     color: var(--second-text-color);
     background-color: var(--accent-color);
 
@@ -261,6 +269,7 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
+    
         
     display: flex;
     align-items: center;
@@ -275,4 +284,10 @@ body {
 /* .example {     
       
 }*/
-
+.container {    
+    margin-left: auto;
+    margin-right: auto;
+    padding:0 15px;
+    width: 1200px;
+    outline: 2px solid rebeccapurple;
+}
