@@ -20,10 +20,6 @@
 p {
     margin: 0;
 }
-ol, ul {
-    margin: 0;
-    padding-left: 0;
-}
 button {
     cursor: pointer;
 }
@@ -47,10 +43,15 @@ body {
 
 /* Прибираю крапки пунктів списку */
 .list {
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 .link {
     text-decoration: none;
+}
+.header-clss{
+    border-bottom: 1px solid #ECECEC
 }
 /* Задаю контейнер для контенту сторінок */
 .container {
@@ -73,8 +74,21 @@ body {
     font-size: 26px;
     line-height: 1.2;
 }
+.hed-container {
+    display: flex;
+    align-items: center;
+}
+.header-nav {
+    display: flex;
+}
+.site-nav {
+    display: flex;
+    align-items: center;
+    margin-left: 93px;
+}
 /* Задаю колір та шрифт ссилок в блоці навігації */
 .site-nav .link {
+    display: flex;
     color: var(--title-text-color);
 
     font-weight: 500;
@@ -89,6 +103,17 @@ body {
 .site-nav .link.current {
     color: var(--accent-color);
 }
+.li-nav:not(:last-child){
+    margin-right: 50px;
+}
+.contact-nav {
+    display: flex;
+    margin-left: auto;
+}
+.contact-li + .contact-li {
+    margin-left: 50px;
+}
+
 /* Задаю колір та шрифт ссилок в блоці авторизації */
 .contact-nav .link {
     color: var(--general-text-color);
@@ -107,8 +132,6 @@ body {
 /* задаю колір та шрифт заголовків */
 /* Задаю колір та шрифт головного заголовка */
 .hero {
-    margin-bottom: 94px;
-
     background-color: var(--brc-herofooter);
     text-align: center;
 }
@@ -127,8 +150,13 @@ body {
     text-transform: uppercase;
 }
 .section {
+    padding-top: 94px;
     padding-bottom: 94px;    
 }
+.section.works{
+    padding-top: 0;
+}
+
 
 /* задаю колір та шрифт заголовків секції */
 .section-title {
@@ -180,18 +208,19 @@ body {
 }
 
 /* задаю колір та шрифт основного тексту в секції team */
-/* .team { 
     
-       
-}*/
+
 .works-list {
     display: flex;
 }
-.works-li {
+.works-li:not(:last-child) {
     margin-right: 30px;
 }
 .works-img {
     display: block;
+}
+.team {
+    display: flex;
 }
 .team-title {
     margin-top: 0;
@@ -205,48 +234,56 @@ body {
     
     text-align: center;
 }
+.team-li {
+    width: 270;
+}
+.team-li + .team-li {
+    margin-left: 30px;;
+}
 .team-decription {
     font-size: 16px;
-    line-height: 1.2;
-    
+    line-height: 1.2;    
     
     text-align: center;
-
 }
-
-/* задаю колір та шрифт заголовків h3 в секції team */
-/* .team .title { 
-    color: var(--title-text-color);
-
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.88;
-   
-    
-    text-align: center;    
-}*/
+.portfolio-header {
+    margin-bottom: 94px;
+}
+.filter {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+.filter-li + .filter-li {
+    margin-left: 8px;
+}
+.example {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
 /* Задаю колір заголовків h3 в секції приклади */
 .example-title {
     margin-top: 0;
     margin-bottom: 4px;
     color: var(--title-text-color);
 
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-}
-.example-title{
-
-    color: var(--title-text-color);
     
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 }
+.example-li {
+    margin: 15px;
+    width: 370px;
+}
+
 .example-decription {
     font-size: 16px;
     line-height: 1.88;
+}
+.example-li.bord {
+    border-bottom: 1px solid #EEEEEE
 }
 /* задаю колір та шрифт логотипу в футері */
 .logotextfoot {
