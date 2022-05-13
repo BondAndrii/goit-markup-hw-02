@@ -17,6 +17,19 @@
     --back-ground-color: #E5E5E5;
     --brc-herofooter: #2F303A;
 }
+p {
+    margin: 0;
+}
+ol, ul {
+    margin: 0;
+    padding-left: 0;
+}
+button {
+    cursor: pointer;
+}
+a {
+    color: currentColor;
+}
 /* Задаю основні стилі сторінки */
 body {
     color: var(--general-text-color);
@@ -27,33 +40,38 @@ body {
     font-size: 14px;
     letter-spacing: 0.03em;
 }
-/* Задаю колір передньої частини логотипу */ 
-.logo {
-    color:var(--accent-color);
-
+/* Задаю утілітарний клас для приховування будь-чого на сторінці */
+.invisible {
+    display: none;
 }
-/* .navigation { 
-    color: var(--title-text-color);
-}*/
-/* задаю колір другої частини тексту лого */
-.logotext {
-    color: var(--title-text-color);
 
-    font-family: raleway,sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;       
-}
-/* задаю колір лого при ховері та фокусі */
-/* .logotext:hover, .logotext:focus { 
-    color: var(--accent-color);
-}*/
 /* Прибираю крапки пунктів списку */
 .list {
     list-style: none;
 }
 .link {
     text-decoration: none;
+}
+/* Задаю контейнер для контенту сторінок */
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 1170px;
+    outline: 2px solid rebeccapurple;
+}
+/* Задаю колір передньої частини логотипу */
+.logo {
+    color: var(--accent-color);
+}
+
+/* задаю колір другої частини тексту лого */
+.logotext {
+    color: var(--title-text-color);
+
+    font-family: raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
 }
 /* Задаю колір та шрифт ссилок в блоці навігації */
 .site-nav .link {
@@ -89,9 +107,15 @@ body {
 /* задаю колір та шрифт заголовків */
 /* Задаю колір та шрифт головного заголовка */
 .hero {
-    background-color: var(--brc-herofooter) ;
+    margin-bottom: 94px;
+
+    background-color: var(--brc-herofooter);
+    text-align: center;
 }
 .hero-title {
+    margin-top: 0;
+    margin-bottom: 40px;
+       
     color: var(--second-text-color);
 
     font-weight: 900;
@@ -102,20 +126,38 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
+.section {
+    padding-bottom: 94px;    
+}
+
 /* задаю колір та шрифт заголовків секції */
 .section-title {
+    margin-top: 0;
+    margin-bottom: 50px;
     color: var(--title-text-color);
 
-    /* font-weight: 700; 
-    прибираю шрифт 700 з заголовку, бо він такий по замовчуванню для заголовків*/
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
     
 }
 
+.featers {
+    display: flex;
+}
+/* Задаю ширину лішкам списку featers */
+.featers-li {
+    width: 270px;
+}
+/* Задаю маржини лішкам списку featers крім останнього */
+.featers-li:not(:last-child){
+    margin-right: 30px;
+}
 /* задаю колір та шрифт h3 в секції featers */
 .featers-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    
     color: var(--title-text-color);
 
     /* font-weight: 700; */
@@ -133,7 +175,7 @@ body {
 }*/
 /* задаю колір та шрифт основного тексту в секції featers */
 .featers-decription {
-    
+    display: inline-block;    
     line-height: 1.71;
 }
 
@@ -142,7 +184,18 @@ body {
     
        
 }*/
+.works-list {
+    display: flex;
+}
+.works-li {
+    margin-right: 30px;
+}
+.works-img {
+    display: block;
+}
 .team-title {
+    margin-top: 0;
+    margin-bottom: 10px;
     color: var(--title-text-color);
 
     font-weight: 500;
@@ -174,6 +227,8 @@ body {
 }*/
 /* Задаю колір заголовків h3 в секції приклади */
 .example-title {
+    margin-top: 0;
+    margin-bottom: 4px;
     color: var(--title-text-color);
 
     font-weight: 700;
@@ -207,8 +262,7 @@ body {
 
 /* задаю колір тексту футера */
 .footer-nav .link {
-    color: var(--second-text-color);
-    
+    color: var(--second-text-color);    
     
     font-style: normal;
     line-height: 1.71;     
@@ -232,6 +286,7 @@ body {
 /* Оформляємо кнопки */
 /* задаю колір та шрифт кнопок фільтру */
 .button {
+    display: inline-block;
     border-radius: 4px;
     padding: 6 22;
     border: none;
@@ -258,9 +313,12 @@ body {
 }
 /* задаю колір та шрифт кнопці "заказать услугу" */
 .button-hero {
+    display: block;
     border-radius: 4px;
     padding: 10 32;
     border: none;
+    margin: auto;
+    margin-top: 30px;
 
     color: var(--second-text-color);
     background-color: var(--accent-color);
@@ -271,23 +329,9 @@ body {
     line-height: 1.88;
     
         
-    display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
 }
-/* задаю колір бекграунду футера */
-/* footer {
-    background-color: var(--brc-footer);
-} */
-/* задаю колір та шрифт секції приклади */
-/* .example {     
-      
-}*/
-.container {    
-    margin-left: auto;
-    margin-right: auto;
-    padding:0 15px;
-    width: 1200px;
-    outline: 2px solid rebeccapurple;
-}
+
+
